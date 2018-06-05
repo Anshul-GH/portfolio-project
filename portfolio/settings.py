@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jobs.apps.JobsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs.apps.JobsConfig',
 ]
 
 MIDDLEWARE = [
@@ -100,7 +100,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -120,6 +119,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Media files
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
