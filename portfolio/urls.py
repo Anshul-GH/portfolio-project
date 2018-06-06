@@ -19,10 +19,11 @@ from django.urls import path
 # from django.conf import settings
 from portfolio import settings
 from django.conf.urls.static import static
-
+import jobs.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', jobs.views.home, name='home'),
     # '/',
     # url(r'^admin/', include(admin.site.urls)),
     # path(r'/', admin.site.urls),
